@@ -12,7 +12,9 @@ module Sneakers
       def timing(metric, &block)
         start = Time.now
         block.call
-        @connection.timing(metric, ((Time.now - start)*1000).floor)
+        elapsed = ((Time.now - start)*1000).floor
+        @connection.timing(metric, elapsed)
+        elapsed
       end
 
     end
