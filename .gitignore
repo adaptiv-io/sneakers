@@ -7,3 +7,4 @@ coverage/
 tmp/
 .bundle/*
 vendor/*
+.DS_Store
