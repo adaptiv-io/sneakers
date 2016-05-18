@@ -1,6 +1,9 @@
 module Sneakers
   module Metrics
     class NullMetrics
+      def count(metric, value)
+      end
+
       def increment(metric)
       end
 
