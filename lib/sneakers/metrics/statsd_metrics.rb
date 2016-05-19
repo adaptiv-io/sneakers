@@ -5,6 +5,10 @@ module Sneakers
         @connection = conn
       end
 
+      def count(metric, value)
+        @connection.count(metric, value)
+      end
+
       def increment(metric)
         @connection.increment(metric)
       end
